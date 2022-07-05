@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plugin Lightbox</title>
+
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+
+<style>
+    #galeria-de-fotos { text-align: center; }
+    
+    /* Mudando fundo de preto para rosa */
+    /* .lightboxOverlay{background-color: pink}; */
+
+</style>
+</head>
+<body>
+
+    <h1>Plugin Lightbox</h1>
+    <hr>
+    <p><i>Informações gerais:</i> <a href="http://lokeshdhakar.com/projects/lightbox2/" target="_blank">Lightbox</a></p>
+    <hr>
+    
+    <div id="galeria-de-fotos">
+
+        <p>Clique na imagem para ampliar</p>
+
+        <a data-title="PHP Back-end" data-lightbox="galeria" href="imagens/logo-php.png">
+            <img src="imagens/logo-php-mini.jpg" alt="">
+        </a>
+        <a data-title="Banco de dados MySQL" data-lightbox="galeria" href="imagens/logo-mysql.png">
+            <img src="imagens/logo-mysql-mini.gif" alt="">
+        </a>
+        <a data-title="Gerenciamento de conteudo" data-lightbox="galeria" href="imagens/logo-wordpress.png">
+            <img src="imagens/logo-wordpress-mini.png" alt="">
+        </a>
+    </div>
+
+
+    <!-- Entrar na site https://lokeshdhakar.com/projects/lightbox2/-->
+    <!-- Download a zip of the latest release (or any previous one) from the Github Releases page. -->
+    <!-- versão: source code zip-->
+    <!-- Pasta downloads, descompactar -->
+    <!-- Copiar subpastas css, images, js do sbdiretorio dist -->
+    <!-- criar pasta chamado lightbox e colar o conteudo acima na pasta nova chamado lightbox, dentro da pasta do site -->
+
+    <script src="js/jquery-3.6.0.min.js"></script> 
+    <script src="lightbox/js/lightbox.min.js"></script>
+
+    <script>
+        lightbox.option({
+            'albumLabel' : "Foto %1 de %2" });
+    </script>
+
+</body>
+</html>

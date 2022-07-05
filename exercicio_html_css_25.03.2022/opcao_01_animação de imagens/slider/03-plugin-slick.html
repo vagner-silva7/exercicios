@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plugin Slick Slider</title>
+
+
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+
+<style>
+    body { background-color: lightblue; }  
+    #slider {
+        margin: auto;
+        width: 80%;
+    }
+</style>
+  
+</head>
+   
+<body>
+    <h1>Plugin Slick Slider</h1>    
+    <hr>
+
+    <p><i>Informações gerais/link:</i> <a href="http://kenwheeler.github.io/slick/" target="_blank">Slick</a></p>
+    <hr>
+
+    <div id="slider">
+        <div>
+            <img src="imagens/dedos.jpg" alt="">
+            <p>São dedos!</p>
+        </div>
+        <div>
+            <img src="imagens/ideias.jpg" alt="">
+            <p>Muitas ideias!</p>
+        </div>
+        <div>
+            <img src="imagens/pacoca.jpg" alt="">
+            <p>Adoro paçoca!</p>
+        </div>
+    </div>
+</div>    
+
+
+
+
+
+    <!-- Entrar na site http://kenwheeler.github.io/slick/-->
+    <!-- Entrar no get it now -->
+    <!-- Download now -->
+    <!-- Pasta downloads -->
+    <!-- Descompactar arquivo -->
+    <!-- Copiar pasta slick -->
+    <!-- Colar na pasta do site -->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+        <!-- Inicialização do slide -->
+        <script> 
+            $(document).ready(function(){
+                $('#slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000, /* 2 segundo */
+                });
+            });
+        </script>
+
+
+</body>
+    
+</html>
